@@ -1,0 +1,31 @@
+h1. PHP Minify - Online YUI Compressor
+
+p. "PHP Minify(PHP Minify)":https://github.com/amereservant/PHP-Minify is a website interface for the "YUI Compressor(YUI Compressor)":http://developer.yahoo.com/yui/compressor/, created to run on Ubuntu installs of the "yui-compressor(yui-compressor)":http://packages.ubuntu.com/lucid/yui-compressor package.  It allows the user to setup and run their own web-based YUI Compressor on a Ubuntu box with *Apache*, *PHP* and *YUI-Compressor* installed on it.
+
+p. Credit for this project is due to the free resources made available by other open source contributors, since I more less just combined them together and can't take credit for more than that.  Here's the list of resources used:
+* "YUICompressor(YUICompressor)":http://code.google.com/p/minify/source/browse/trunk/min/lib/Minify/YUICompressor.php by "Stephen Clay(Stephen Clay)":http://www.mrclay.org/ - This was where the core class of this project came from and credit for that is due to him.
+* "CSS1K.com - Simpl Theme(CSS1K.com - Simpl Theme)":http://css1k.com/#simpl by "Neofyt(Neofyt's Playgound)":http://www.neofyt.com/ - The theme for this was based off of Neofyt's theme and expanded on.
+* "Initializr 2(Initilizr 2)":http://www.initializr.com/ - Used to create the base layout and has very useful helps for starting an HTML5 template.
+* "Online YUI Compressor(Online YUI Compressor)":http://www.refresh-sf.com/yui/ - This was my initial inspiration for this project.  I've been using this site to minify code for a long time now and it wasn't working one day when I needed it, so I created this project as a result.  He shares his "PHP-YUI-Compressor(PHP-YUI-Compressor)":http://github.com/gpbmike/PHP-YUI-Compressor class and if I had noticed that at first, I probably would've used his class for this.
+
+h2. Usage
+
+p. You MUST have a Ubuntu box with *Apache*, *PHP5*, and *YUI-Compressor* installed on it.  A different distro of Linux can be used, but the commands will need to be corrected in the PHP_Minify class if the yui compressor can't be executed via the *yui-compressor*
+command.
+# Install the YUI-Compressor: @sudo apt-get install yui-compressor@ _(This is assuming you've already installed Apache and PHP5)_
+# Create a directory in your webroot directory _(Ex. */var/www/yui*)_ and put the contents of this project in it.
+# Change the ownership to the Apache user, @sudo chmod www-data -R /var/www/yui@.
+# Visit the site and make sure everything works.  That should be it!
+
+h2. License
+
+p. This project is licensed under the "MIT license(MIT License)":http://www.opensource.org/licenses/mit-license.php with the exception of the PHP_Minify class, which didn't specify in the class itself, but the project it's included in, "minify(minify)":http://code.google.com/p/minify/source/browse/trunk/min/lib/Minify/YUICompressor.php, is licensed under "New BSD License(New BSD License)":http://www.opensource.org/licenses/bsd-license.php so I would assume this class would fall under it as well.
+
+h2. Contributions
+
+p. I gladly accept any contributions to this project since I made it for my own personal use and I'm sharing it for the benefit of others who might also need it.
+I don't have much spare time to spend on it, so anyone wishing to improve it is gladly welcomed to do so.
+
+h2. Issues
+
+p. Please report any issues on the project's GitHub page, "https://github.com/amereservant/PHP-Minify(PHP-Minify @ GitHub)":https://github.com/amereservant/PHP-Minify .  I know there's a formatting glitch in Google Chrome regarding the footer blending in with the output details, but otherwise it seems to be fine in other browsers I've tested it in.
